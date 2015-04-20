@@ -1,0 +1,19 @@
+#personList {
+	margin-top: 10px;
+}
+
+button {
+	margin: 0 auto;
+	display: block;
+	height: 40px;
+	width: 100px;
+	border-radius: 5px;
+	background-color: #00E600;
+}
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	text-align: center;
+}
