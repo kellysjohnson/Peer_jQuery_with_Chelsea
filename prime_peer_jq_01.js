@@ -1,5 +1,4 @@
-//Utility function
-//A simple random number generator
+
 function randomNumber(min, max) {
 	return Math.floor(Math.random() * (1 + max - min) + min);
 }
@@ -23,11 +22,18 @@ function Person(age, gender, weight){
 
 $(document).ready(function() {
 	$('button').on("click", function(){
+
 		age = randomNumber(1,100);
 		gender = randomNumber(1,2);
 		weight = randomNumber(1,250);
+
 		var newPerson = new Person(age, gender, weight);
+
+		$("#age").append("<tr><td id=" + i + ">" + newPerson.age + "</td></tr>");
+		$("#gender").append("<tr><td id=" + i + ">" + newPerson.gender + "</td></tr>");
+		$("#weight").append("<tr><td id=" + i + ">" + newPerson.weight + "</td></tr>");
+
 		i++;
-		$("#personList").prepend("<p>Person " + i + " is " + newPerson.age + " years old, is a " + newPerson.gender + " and weighs " + newPerson.weight + " pounds.</p>");
+
 	});
 });
