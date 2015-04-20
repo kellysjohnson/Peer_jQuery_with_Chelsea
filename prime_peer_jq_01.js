@@ -23,7 +23,7 @@ function Person(age, gender, weight){
 
 $(document).ready(function() {
 	$('button').on("click", function(){
-		age = randomNumber(1,100);//this was saying age = undefined??
+		age = randomNumber(1,100);
 		gender = randomNumber(1,2);
 		weight = randomNumber(1,250);
 		var newPerson = new Person(age, gender, weight);
